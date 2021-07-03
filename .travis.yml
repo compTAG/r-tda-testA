@@ -5,8 +5,10 @@ cache: packages
 before_script:
 - make attrib
 
+
 addons:
   apt:
     update: true
     packages:
       - libmpfr-dev
+      - libmagick++-dev

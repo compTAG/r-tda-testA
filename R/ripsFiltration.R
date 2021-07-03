@@ -52,14 +52,16 @@ ripsFiltration <- function(
         library = library, printProgress = printProgress)
   }
 
-  if (dist == "euclidean") {  
+  if (dist == "euclidean") {
     out <- list(
         "cmplx" = ripsOut[[1]], "values" = ripsOut[[2]], "increasing" = TRUE,
-        "coordinates" = X)
+        "coordinates" = X, "dist" = dist)
   } else {
     out <- list(
-        "cmplx" = ripsOut[[1]], "values" = ripsOut[[2]], "increasing" = TRUE)
+        "cmplx" = ripsOut[[1]], "values" = ripsOut[[2]], "increasing" = TRUE,
+        "dist" = dist)
   }
 
+  class(out) <- c("ripsFilt", class(out))
   return (out)
 }

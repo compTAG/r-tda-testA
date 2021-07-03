@@ -5,6 +5,8 @@ export(
   alphaComplexFiltration,
   alphaShapeDiag,
   alphaShapeFiltration,
+  animate,
+  animate.ripsFilt,
   bootstrapBand,
   bootstrapDiagram,
   bottleneck,
@@ -25,6 +27,7 @@ export(
   multipBootstrap,
   plot.diagram,
   plot.maxPersistence,
+  plot.ripsFilt,
   plot.clusterTree,
   print.diagram,
   print.maxPersistence,
@@ -40,9 +43,11 @@ export(
   torusUnif,
   wasserstein)
 
+S3method(animate, ripsFilt)
 S3method(plot, diagram)
 S3method(plot, maxPersistence)
 S3method(plot, clusterTree)
+S3method(plot, ripsFilt)
 S3method(print, diagram)
 S3method(print, maxPersistence)
 S3method(print, clusterTree)

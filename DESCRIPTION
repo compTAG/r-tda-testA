@@ -18,7 +18,9 @@ Imports:
     Rcpp (>= 0.11.0),
     igraph,
     parallel,
-    scales
+    scales,
+    animation,
+    plotrix
 Suggests:
     testthat,
     lintr
