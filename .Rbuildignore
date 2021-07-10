@@ -1,3 +1,5 @@
 ^\.travis\.yml$
 CONTRIBUTING.md
 .lintr
+Makefile
+misc
